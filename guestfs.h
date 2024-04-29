@@ -943,8 +943,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_acl_set_file (guestfs_h *g, const char *pa
 
 #define GUESTFS_HAVE_ADD_CDROM 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_add_cdrom (guestfs_h *g, const char *filename)
-  GUESTFS_DEPRECATED_REPLACED_BY ("add_drive_ro");
+extern GUESTFS_DLL_PUBLIC int guestfs_add_cdrom (guestfs_h *g, const char *filename);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("add_drive_ro");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ADD_DOMAIN 1
@@ -1041,8 +1041,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_add_drive_ro (guestfs_h *g, const char *fi
 
 #define GUESTFS_HAVE_ADD_DRIVE_RO_WITH_IF 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_add_drive_ro_with_if (guestfs_h *g, const char *filename, const char *iface)
-  GUESTFS_DEPRECATED_REPLACED_BY ("add_drive");
+extern GUESTFS_DLL_PUBLIC int guestfs_add_drive_ro_with_if (guestfs_h *g, const char *filename, const char *iface);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("add_drive");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ADD_DRIVE_SCRATCH 1
@@ -1066,8 +1066,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_add_drive_scratch_argv (guestfs_h *g, int6
 
 #define GUESTFS_HAVE_ADD_DRIVE_WITH_IF 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_add_drive_with_if (guestfs_h *g, const char *filename, const char *iface)
-  GUESTFS_DEPRECATED_REPLACED_BY ("add_drive");
+extern GUESTFS_DLL_PUBLIC int guestfs_add_drive_with_if (guestfs_h *g, const char *filename, const char *iface);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("add_drive");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ADD_LIBVIRT_DOM 1
@@ -1206,8 +1206,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_blockdev_rereadpt (guestfs_h *g, const cha
 
 #define GUESTFS_HAVE_BLOCKDEV_SETBSZ 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_blockdev_setbsz (guestfs_h *g, const char *device, int blocksize)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC int guestfs_blockdev_setbsz (guestfs_h *g, const char *device, int blocksize);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_BLOCKDEV_SETRA 1
@@ -1612,8 +1612,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_copy_out (guestfs_h *g, const char *remote
 
 #define GUESTFS_HAVE_COPY_SIZE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_copy_size (guestfs_h *g, const char *src, const char *dest, int64_t size)
-  GUESTFS_DEPRECATED_REPLACED_BY ("copy_device_to_device");
+extern GUESTFS_DLL_PUBLIC int guestfs_copy_size (guestfs_h *g, const char *src, const char *dest, int64_t size);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("copy_device_to_device");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_CP 1
@@ -1659,8 +1659,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_cryptsetup_open_argv (guestfs_h *g, const 
 
 #define GUESTFS_HAVE_DD 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_dd (guestfs_h *g, const char *src, const char *dest)
-  GUESTFS_DEPRECATED_REPLACED_BY ("copy_device_to_device");
+extern GUESTFS_DLL_PUBLIC int guestfs_dd (guestfs_h *g, const char *src, const char *dest);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("copy_device_to_device");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_DEBUG 1
@@ -1767,8 +1767,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_e2fsck_argv (guestfs_h *g, const char *dev
 
 #define GUESTFS_HAVE_E2FSCK_F 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_e2fsck_f (guestfs_h *g, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("e2fsck");
+extern GUESTFS_DLL_PUBLIC int guestfs_e2fsck_f (guestfs_h *g, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("e2fsck");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ECHO_DAEMON 1
@@ -1776,14 +1776,14 @@ extern GUESTFS_DLL_PUBLIC char *guestfs_echo_daemon (guestfs_h *g, char *const *
 
 #define GUESTFS_HAVE_EGREP 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_egrep (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_egrep (guestfs_h *g, const char *regex, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_EGREPI 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_egrepi (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_egrepi (guestfs_h *g, const char *regex, const char *path);
+ // GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_EQUAL 1
@@ -1800,8 +1800,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_f2fs_expand (guestfs_h *g, const char *dev
 
 #define GUESTFS_HAVE_FALLOCATE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_fallocate (guestfs_h *g, const char *path, int len)
-  GUESTFS_DEPRECATED_REPLACED_BY ("fallocate64");
+extern GUESTFS_DLL_PUBLIC int guestfs_fallocate (guestfs_h *g, const char *path, int len);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("fallocate64");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_FALLOCATE64 1
@@ -1812,14 +1812,14 @@ extern GUESTFS_DLL_PUBLIC int guestfs_feature_available (guestfs_h *g, char *con
 
 #define GUESTFS_HAVE_FGREP 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_fgrep (guestfs_h *g, const char *pattern, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_fgrep (guestfs_h *g, const char *pattern, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_FGREPI 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_fgrepi (guestfs_h *g, const char *pattern, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_fgrepi (guestfs_h *g, const char *pattern, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_FILE 1
@@ -1888,8 +1888,8 @@ extern GUESTFS_DLL_PUBLIC const char *guestfs_get_append (guestfs_h *g);
 
 #define GUESTFS_HAVE_GET_ATTACH_METHOD 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_get_attach_method (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("get_backend");
+extern GUESTFS_DLL_PUBLIC char *guestfs_get_attach_method (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("get_backend");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GET_AUTOSYNC 1
@@ -1909,8 +1909,8 @@ extern GUESTFS_DLL_PUBLIC char *guestfs_get_cachedir (guestfs_h *g);
 
 #define GUESTFS_HAVE_GET_DIRECT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_get_direct (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("internal_get_console_socket");
+extern GUESTFS_DLL_PUBLIC int guestfs_get_direct (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("internal_get_console_socket");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GET_E2ATTRS 1
@@ -1921,14 +1921,14 @@ extern GUESTFS_DLL_PUBLIC int64_t guestfs_get_e2generation (guestfs_h *g, const 
 
 #define GUESTFS_HAVE_GET_E2LABEL 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_get_e2label (guestfs_h *g, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("vfs_label");
+extern GUESTFS_DLL_PUBLIC char *guestfs_get_e2label (guestfs_h *g, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("vfs_label");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GET_E2UUID 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_get_e2uuid (guestfs_h *g, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("vfs_uuid");
+extern GUESTFS_DLL_PUBLIC char *guestfs_get_e2uuid (guestfs_h *g, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("vfs_uuid");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GET_HV 1
@@ -1969,8 +1969,8 @@ extern GUESTFS_DLL_PUBLIC const char *guestfs_get_program (guestfs_h *g);
 
 #define GUESTFS_HAVE_GET_QEMU 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC const char *guestfs_get_qemu (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("get_hv");
+extern GUESTFS_DLL_PUBLIC const char *guestfs_get_qemu (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("get_hv");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GET_RECOVERY_PROC 1
@@ -1978,8 +1978,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_get_recovery_proc (guestfs_h *g);
 
 #define GUESTFS_HAVE_GET_SELINUX 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_get_selinux (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
+extern GUESTFS_DLL_PUBLIC int guestfs_get_selinux (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GET_SMP 1
@@ -2005,8 +2005,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_get_verbose (guestfs_h *g);
 
 #define GUESTFS_HAVE_GETCON 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_getcon (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
+extern GUESTFS_DLL_PUBLIC char *guestfs_getcon (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GETXATTR 1
@@ -2058,8 +2058,8 @@ extern GUESTFS_DLL_PUBLIC char **guestfs_grep_opts_argv (guestfs_h *g, const cha
 
 #define GUESTFS_HAVE_GREPI 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_grepi (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_grepi (guestfs_h *g, const char *regex, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_GRUB_INSTALL 1
@@ -2143,8 +2143,8 @@ extern GUESTFS_DLL_PUBLIC int64_t guestfs_hivex_value_type (guestfs_h *g, int64_
 
 #define GUESTFS_HAVE_HIVEX_VALUE_UTF8 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_hivex_value_utf8 (guestfs_h *g, int64_t valueh)
-  GUESTFS_DEPRECATED_REPLACED_BY ("hivex_value_string");
+extern GUESTFS_DLL_PUBLIC char *guestfs_hivex_value_utf8 (guestfs_h *g, int64_t valueh);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("hivex_value_string");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_HIVEX_VALUE_VALUE 1
@@ -2188,8 +2188,8 @@ extern GUESTFS_DLL_PUBLIC char **guestfs_inspect_get_filesystems (guestfs_h *g, 
 
 #define GUESTFS_HAVE_INSPECT_GET_FORMAT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_inspect_get_format (guestfs_h *g, const char *root)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC char *guestfs_inspect_get_format (guestfs_h *g, const char *root);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_INSPECT_GET_HOSTNAME 1
@@ -2255,26 +2255,26 @@ extern GUESTFS_DLL_PUBLIC char *guestfs_inspect_get_windows_systemroot (guestfs_
 
 #define GUESTFS_HAVE_INSPECT_IS_LIVE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_inspect_is_live (guestfs_h *g, const char *root)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC int guestfs_inspect_is_live (guestfs_h *g, const char *root);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_INSPECT_IS_MULTIPART 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_inspect_is_multipart (guestfs_h *g, const char *root)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC int guestfs_inspect_is_multipart (guestfs_h *g, const char *root);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_INSPECT_IS_NETINST 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_inspect_is_netinst (guestfs_h *g, const char *root)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC int guestfs_inspect_is_netinst (guestfs_h *g, const char *root);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_INSPECT_LIST_APPLICATIONS 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC struct guestfs_application_list *guestfs_inspect_list_applications (guestfs_h *g, const char *root)
-  GUESTFS_DEPRECATED_REPLACED_BY ("inspect_list_applications2");
+extern GUESTFS_DLL_PUBLIC struct guestfs_application_list *guestfs_inspect_list_applications (guestfs_h *g, const char *root);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("inspect_list_applications2");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_INSPECT_LIST_APPLICATIONS2 1
@@ -2441,8 +2441,8 @@ extern GUESTFS_DLL_PUBLIC int64_t guestfs_journal_skip (guestfs_h *g, int64_t sk
 
 #define GUESTFS_HAVE_KILL_SUBPROCESS 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_kill_subprocess (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("shutdown");
+extern GUESTFS_DLL_PUBLIC int guestfs_kill_subprocess (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("shutdown");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LAUNCH 1
@@ -2489,8 +2489,8 @@ extern GUESTFS_DLL_PUBLIC struct guestfs_xattr_list *guestfs_lgetxattrs (guestfs
 
 #define GUESTFS_HAVE_LIST_9P 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_list_9p (guestfs_h *g)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC char **guestfs_list_9p (guestfs_h *g);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LIST_DEVICES 1
@@ -2522,8 +2522,8 @@ extern GUESTFS_DLL_PUBLIC char *guestfs_ll (guestfs_h *g, const char *directory)
 
 #define GUESTFS_HAVE_LLZ 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_llz (guestfs_h *g, const char *directory)
-  GUESTFS_DEPRECATED_REPLACED_BY ("lgetxattrs");
+extern GUESTFS_DLL_PUBLIC char *guestfs_llz (guestfs_h *g, const char *directory);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("lgetxattrs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LN 1
@@ -2552,14 +2552,14 @@ extern GUESTFS_DLL_PUBLIC int guestfs_lsetxattr (guestfs_h *g, const char *xattr
 
 #define GUESTFS_HAVE_LSTAT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC struct guestfs_stat *guestfs_lstat (guestfs_h *g, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("lstatns");
+extern GUESTFS_DLL_PUBLIC struct guestfs_stat *guestfs_lstat (guestfs_h *g, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("lstatns");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LSTATLIST 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC struct guestfs_stat_list *guestfs_lstatlist (guestfs_h *g, const char *path, char *const *names)
-  GUESTFS_DEPRECATED_REPLACED_BY ("lstatnslist");
+extern GUESTFS_DLL_PUBLIC struct guestfs_stat_list *guestfs_lstatlist (guestfs_h *g, const char *path, char *const *names);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("lstatnslist");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LSTATNS 1
@@ -2573,8 +2573,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_luks_add_key (guestfs_h *g, const char *de
 
 #define GUESTFS_HAVE_LUKS_CLOSE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_luks_close (guestfs_h *g, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("cryptsetup_close");
+extern GUESTFS_DLL_PUBLIC int guestfs_luks_close (guestfs_h *g, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("cryptsetup_close");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LUKS_FORMAT 1
@@ -2588,14 +2588,14 @@ extern GUESTFS_DLL_PUBLIC int guestfs_luks_kill_slot (guestfs_h *g, const char *
 
 #define GUESTFS_HAVE_LUKS_OPEN 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_luks_open (guestfs_h *g, const char *device, const char *key, const char *mapname)
-  GUESTFS_DEPRECATED_REPLACED_BY ("cryptsetup_open");
+extern GUESTFS_DLL_PUBLIC int guestfs_luks_open (guestfs_h *g, const char *device, const char *key, const char *mapname);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("cryptsetup_open");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LUKS_OPEN_RO 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_luks_open_ro (guestfs_h *g, const char *device, const char *key, const char *mapname)
-  GUESTFS_DEPRECATED_REPLACED_BY ("cryptsetup_open");
+extern GUESTFS_DLL_PUBLIC int guestfs_luks_open_ro (guestfs_h *g, const char *device, const char *key, const char *mapname);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("cryptsetup_open");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_LUKS_UUID 1
@@ -2821,38 +2821,38 @@ extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_argv (guestfs_h *g, const char *dev
 
 #define GUESTFS_HAVE_MKE2FS_J 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_J (guestfs_h *g, const char *fstype, int blocksize, const char *device, const char *journal)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_J (guestfs_h *g, const char *fstype, int blocksize, const char *device, const char *journal);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKE2FS_JL 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_JL (guestfs_h *g, const char *fstype, int blocksize, const char *device, const char *label)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_JL (guestfs_h *g, const char *fstype, int blocksize, const char *device, const char *label);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKE2FS_JU 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_JU (guestfs_h *g, const char *fstype, int blocksize, const char *device, const char *uuid)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mke2fs_JU (guestfs_h *g, const char *fstype, int blocksize, const char *device, const char *uuid);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKE2JOURNAL 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mke2journal (guestfs_h *g, int blocksize, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mke2journal (guestfs_h *g, int blocksize, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKE2JOURNAL_L 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mke2journal_L (guestfs_h *g, int blocksize, const char *label, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mke2journal_L (guestfs_h *g, int blocksize, const char *label, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKE2JOURNAL_U 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mke2journal_U (guestfs_h *g, int blocksize, const char *uuid, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mke2journal_U (guestfs_h *g, int blocksize, const char *uuid, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mke2fs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKFIFO 1
@@ -2888,8 +2888,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_mkfs_opts_argv (guestfs_h *g, const char *
 
 #define GUESTFS_HAVE_MKFS_B 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mkfs_b (guestfs_h *g, const char *fstype, int blocksize, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mkfs");
+extern GUESTFS_DLL_PUBLIC int guestfs_mkfs_b (guestfs_h *g, const char *fstype, int blocksize, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mkfs");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKFS_BTRFS 1
@@ -2978,14 +2978,14 @@ extern GUESTFS_DLL_PUBLIC int guestfs_mkswap_opts_argv (guestfs_h *g, const char
 
 #define GUESTFS_HAVE_MKSWAP_L 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mkswap_L (guestfs_h *g, const char *label, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mkswap");
+extern GUESTFS_DLL_PUBLIC int guestfs_mkswap_L (guestfs_h *g, const char *label, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mkswap");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKSWAP_U 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_mkswap_U (guestfs_h *g, const char *uuid, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("mkswap");
+extern GUESTFS_DLL_PUBLIC int guestfs_mkswap_U (guestfs_h *g, const char *uuid, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("mkswap");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_MKSWAP_FILE 1
@@ -3149,8 +3149,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_ntfsresize_opts_argv (guestfs_h *g, const 
 
 #define GUESTFS_HAVE_NTFSRESIZE_SIZE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_ntfsresize_size (guestfs_h *g, const char *device, int64_t size)
-  GUESTFS_DEPRECATED_REPLACED_BY ("ntfsresize");
+extern GUESTFS_DLL_PUBLIC int guestfs_ntfsresize_size (guestfs_h *g, const char *device, int64_t size);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("ntfsresize");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_PARSE_ENVIRONMENT 1
@@ -3312,8 +3312,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_remount_argv (guestfs_h *g, const char *mo
 
 #define GUESTFS_HAVE_REMOVE_DRIVE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_remove_drive (guestfs_h *g, const char *label)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC int guestfs_remove_drive (guestfs_h *g, const char *label);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_REMOVEXATTR 1
@@ -3421,8 +3421,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_set_append (guestfs_h *g, const char *appe
 
 #define GUESTFS_HAVE_SET_ATTACH_METHOD 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_set_attach_method (guestfs_h *g, const char *backend)
-  GUESTFS_DEPRECATED_REPLACED_BY ("set_backend");
+extern GUESTFS_DLL_PUBLIC int guestfs_set_attach_method (guestfs_h *g, const char *backend);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("set_backend");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SET_AUTOSYNC 1
@@ -3442,8 +3442,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_set_cachedir (guestfs_h *g, const char *ca
 
 #define GUESTFS_HAVE_SET_DIRECT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_set_direct (guestfs_h *g, int direct)
-  GUESTFS_DEPRECATED_REPLACED_BY ("internal_get_console_socket");
+extern GUESTFS_DLL_PUBLIC int guestfs_set_direct (guestfs_h *g, int direct);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("internal_get_console_socket");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SET_E2ATTRS 1
@@ -3464,14 +3464,14 @@ extern GUESTFS_DLL_PUBLIC int guestfs_set_e2generation (guestfs_h *g, const char
 
 #define GUESTFS_HAVE_SET_E2LABEL 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_set_e2label (guestfs_h *g, const char *device, const char *label)
-  GUESTFS_DEPRECATED_REPLACED_BY ("set_label");
+extern GUESTFS_DLL_PUBLIC int guestfs_set_e2label (guestfs_h *g, const char *device, const char *label);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("set_label");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SET_E2UUID 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_set_e2uuid (guestfs_h *g, const char *device, const char *uuid)
-  GUESTFS_DEPRECATED_REPLACED_BY ("set_uuid");
+extern GUESTFS_DLL_PUBLIC int guestfs_set_e2uuid (guestfs_h *g, const char *device, const char *uuid);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("set_uuid");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SET_HV 1
@@ -3506,8 +3506,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_set_program (guestfs_h *g, const char *pro
 
 #define GUESTFS_HAVE_SET_QEMU 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_set_qemu (guestfs_h *g, const char *hv)
-  GUESTFS_DEPRECATED_REPLACED_BY ("set_hv");
+extern GUESTFS_DLL_PUBLIC int guestfs_set_qemu (guestfs_h *g, const char *hv);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("set_hv");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SET_RECOVERY_PROC 1
@@ -3515,8 +3515,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_set_recovery_proc (guestfs_h *g, int recov
 
 #define GUESTFS_HAVE_SET_SELINUX 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_set_selinux (guestfs_h *g, int selinux)
-  GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
+extern GUESTFS_DLL_PUBLIC int guestfs_set_selinux (guestfs_h *g, int selinux);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SET_SMP 1
@@ -3539,8 +3539,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_set_verbose (guestfs_h *g, int verbose);
 
 #define GUESTFS_HAVE_SETCON 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_setcon (guestfs_h *g, const char *context)
-  GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
+extern GUESTFS_DLL_PUBLIC int guestfs_setcon (guestfs_h *g, const char *context);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("selinux_relabel");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SETXATTR 1
@@ -3548,20 +3548,20 @@ extern GUESTFS_DLL_PUBLIC int guestfs_setxattr (guestfs_h *g, const char *xattr,
 
 #define GUESTFS_HAVE_SFDISK 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_sfdisk (guestfs_h *g, const char *device, int cyls, int heads, int sectors, char *const *lines)
-  GUESTFS_DEPRECATED_REPLACED_BY ("part_add");
+extern GUESTFS_DLL_PUBLIC int guestfs_sfdisk (guestfs_h *g, const char *device, int cyls, int heads, int sectors, char *const *lines);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("part_add");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SFDISKM 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_sfdiskM (guestfs_h *g, const char *device, char *const *lines)
-  GUESTFS_DEPRECATED_REPLACED_BY ("part_add");
+extern GUESTFS_DLL_PUBLIC int guestfs_sfdiskM (guestfs_h *g, const char *device, char *const *lines);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("part_add");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SFDISK_N 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_sfdisk_N (guestfs_h *g, const char *device, int partnum, int cyls, int heads, int sectors, const char *line)
-  GUESTFS_DEPRECATED_REPLACED_BY ("part_add");
+extern GUESTFS_DLL_PUBLIC int guestfs_sfdisk_N (guestfs_h *g, const char *device, int partnum, int cyls, int heads, int sectors, const char *line);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("part_add");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SFDISK_DISK_GEOMETRY 1
@@ -3572,8 +3572,8 @@ extern GUESTFS_DLL_PUBLIC char *guestfs_sfdisk_kernel_geometry (guestfs_h *g, co
 
 #define GUESTFS_HAVE_SFDISK_L 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_sfdisk_l (guestfs_h *g, const char *device)
-  GUESTFS_DEPRECATED_REPLACED_BY ("part_list");
+extern GUESTFS_DLL_PUBLIC char *guestfs_sfdisk_l (guestfs_h *g, const char *device);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("part_list");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_SH 1
@@ -3590,8 +3590,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_sleep (guestfs_h *g, int secs);
 
 #define GUESTFS_HAVE_STAT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC struct guestfs_stat *guestfs_stat (guestfs_h *g, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("statns");
+extern GUESTFS_DLL_PUBLIC struct guestfs_stat *guestfs_stat (guestfs_h *g, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("statns");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_STATNS 1
@@ -3710,14 +3710,14 @@ extern GUESTFS_DLL_PUBLIC int guestfs_tar_out_opts_argv (guestfs_h *g, const cha
 
 #define GUESTFS_HAVE_TGZ_IN 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_tgz_in (guestfs_h *g, const char *tarball, const char *directory)
-  GUESTFS_DEPRECATED_REPLACED_BY ("tar_in");
+extern GUESTFS_DLL_PUBLIC int guestfs_tgz_in (guestfs_h *g, const char *tarball, const char *directory);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("tar_in");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_TGZ_OUT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_tgz_out (guestfs_h *g, const char *directory, const char *tarball)
-  GUESTFS_DEPRECATED_REPLACED_BY ("tar_out");
+extern GUESTFS_DLL_PUBLIC int guestfs_tgz_out (guestfs_h *g, const char *directory, const char *tarball);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("tar_out");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_TOUCH 1
@@ -3774,14 +3774,14 @@ extern GUESTFS_DLL_PUBLIC char **guestfs_tune2fs_l (guestfs_h *g, const char *de
 
 #define GUESTFS_HAVE_TXZ_IN 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_txz_in (guestfs_h *g, const char *tarball, const char *directory)
-  GUESTFS_DEPRECATED_REPLACED_BY ("tar_in");
+extern GUESTFS_DLL_PUBLIC int guestfs_txz_in (guestfs_h *g, const char *tarball, const char *directory);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("tar_in");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_TXZ_OUT 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_txz_out (guestfs_h *g, const char *directory, const char *tarball)
-  GUESTFS_DEPRECATED_REPLACED_BY ("tar_out");
+extern GUESTFS_DLL_PUBLIC int guestfs_txz_out (guestfs_h *g, const char *directory, const char *tarball);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("tar_out");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_UMASK 1
@@ -3890,8 +3890,8 @@ extern GUESTFS_DLL_PUBLIC struct guestfs_lvm_vg_list *guestfs_vgs_full (guestfs_
 
 #define GUESTFS_HAVE_VGSCAN 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_vgscan (guestfs_h *g)
-  GUESTFS_DEPRECATED_REPLACED_BY ("lvm_scan");
+extern GUESTFS_DLL_PUBLIC int guestfs_vgscan (guestfs_h *g);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("lvm_scan");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_VGUUID 1
@@ -3899,8 +3899,8 @@ extern GUESTFS_DLL_PUBLIC char *guestfs_vguuid (guestfs_h *g, const char *vgname
 
 #define GUESTFS_HAVE_WAIT_READY 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_wait_ready (guestfs_h *g)
-  GUESTFS_DEPRECATED_NO_REPLACEMENT;
+extern GUESTFS_DLL_PUBLIC int guestfs_wait_ready (guestfs_h *g);
+  //GUESTFS_DEPRECATED_NO_REPLACEMENT;
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_WC_C 1
@@ -3923,8 +3923,8 @@ extern GUESTFS_DLL_PUBLIC int guestfs_write_append (guestfs_h *g, const char *pa
 
 #define GUESTFS_HAVE_WRITE_FILE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC int guestfs_write_file (guestfs_h *g, const char *path, const char *content, int size)
-  GUESTFS_DEPRECATED_REPLACED_BY ("write");
+extern GUESTFS_DLL_PUBLIC int guestfs_write_file (guestfs_h *g, const char *path, const char *content, int size);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("write");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_XFS_ADMIN 1
@@ -4046,14 +4046,14 @@ extern GUESTFS_DLL_PUBLIC struct guestfs_yara_detection_list *guestfs_yara_scan 
 
 #define GUESTFS_HAVE_ZEGREP 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_zegrep (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_zegrep (guestfs_h *g, const char *regex, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ZEGREPI 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_zegrepi (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_zegrepi (guestfs_h *g, const char *regex, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ZERO 1
@@ -4070,32 +4070,32 @@ extern GUESTFS_DLL_PUBLIC int guestfs_zerofree (guestfs_h *g, const char *device
 
 #define GUESTFS_HAVE_ZFGREP 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_zfgrep (guestfs_h *g, const char *pattern, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_zfgrep (guestfs_h *g, const char *pattern, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ZFGREPI 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_zfgrepi (guestfs_h *g, const char *pattern, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_zfgrepi (guestfs_h *g, const char *pattern, const char *path);
+ // GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ZFILE 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char *guestfs_zfile (guestfs_h *g, const char *meth, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("file");
+extern GUESTFS_DLL_PUBLIC char *guestfs_zfile (guestfs_h *g, const char *meth, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("file");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ZGREP 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_zgrep (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_zgrep (guestfs_h *g, const char *regex, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #define GUESTFS_HAVE_ZGREPI 1
 #ifndef GUESTFS_NO_DEPRECATED
-extern GUESTFS_DLL_PUBLIC char **guestfs_zgrepi (guestfs_h *g, const char *regex, const char *path)
-  GUESTFS_DEPRECATED_REPLACED_BY ("grep");
+extern GUESTFS_DLL_PUBLIC char **guestfs_zgrepi (guestfs_h *g, const char *regex, const char *path);
+  //GUESTFS_DEPRECATED_REPLACED_BY ("grep");
 #endif /* !GUESTFS_NO_DEPRECATED */
 
 #if GUESTFS_PRIVATE
